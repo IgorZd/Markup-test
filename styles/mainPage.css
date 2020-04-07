@@ -17,18 +17,61 @@
   src: url(../fonts/HelveticaNeueCyr-Medium.woff) format("woff"),
     url("../fonts/HelveticaNeueCyr-Medium.ttf") format("truetype");
 }
+@keyframes showing {
+  0% {
+    display: none;
+    z-index: 1;
+  }
+  100% {
+    display: flex;
+    z-index: 100;
+  }
+}
+@keyframes hiding {
+  0% {
+    opacity: 1;
+    z-index: 100;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+  }
+}
 body {
   max-width: 1440px;
   margin: 0 auto;
 }
+header {
+  width: 100%;
+  height: 375.5px;
+}
 .header {
   width: 100%;
   height: 375.5px;
+  position: relative;
+  z-index: 100;
   background-image: url(../img/header.png);
+  animation-name: hiding;
+  opacity: 1;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.header_blur {
+  width: 100%;
+  height: 375.5px;
+  background-image: url(../img/header_blur.png);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+  z-index: 1;
+  bottom: 375.5px;
+  animation-name: showing;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 .header_logo {
   width: 95%;
