@@ -19,22 +19,20 @@
 }
 @keyframes showing {
   0% {
+    opacity: 0;
     display: none;
-    z-index: 1;
   }
   100% {
+    opacity: 1;
     display: flex;
-    z-index: 100;
   }
 }
-@keyframes hiding {
+@keyframes blurring {
   0% {
-    opacity: 1;
-    z-index: 100;
+    filter: blur(0px);
   }
   100% {
-    opacity: 0;
-    z-index: 1;
+    filter: blur(6px);
   }
 }
 body {
@@ -49,28 +47,28 @@ header {
   width: 100%;
   height: 375.5px;
   position: relative;
-  z-index: 100;
   background-image: url(../img/header.png);
-  animation-name: hiding;
+  animation-name: blurring;
   opacity: 1;
   animation-duration: 2s;
-  animation-delay: 2s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 .header_blur {
   width: 100%;
   height: 375.5px;
-  background-image: url(../img/header_blur.png);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   position: relative;
-  z-index: 1;
+  z-index: 100;
+  opacity: 0;
   bottom: 375.5px;
   animation-name: showing;
-  animation-duration: 5s;
-  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 .header_logo {
@@ -79,9 +77,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 .menu_img {
   display: none;
+  position: relative;
+  z-index: 2;
 }
 .language {
   width: 55px;
@@ -109,6 +111,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 .name_org_box {
   width: 250px;
@@ -176,6 +180,8 @@ nav {
   height: 40px;
   display: flex;
   justify-content: flex-end;
+  position: relative;
+  z-index: 2;
 }
 .menu {
   width: 45%;
