@@ -27,6 +27,9 @@
   .menu_img {
     display: inline-block;
   }
+  .menu_img:hover {
+    cursor: pointer;
+  }
   .name_org_box {
     display: none;
   }
