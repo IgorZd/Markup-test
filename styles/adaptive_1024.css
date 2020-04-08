@@ -1,34 +1,26 @@
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1024px) {
   body {
-    max-width: 375px;
+    max-width: 1024px;
     margin: 0 auto;
   }
-  header {
-    width: 100%;
-    height: 600px;
-  }
-  .header {
-    background-image: url("../img/Background.jpg");
-    height: 100%;
-  }
-  .header_blur {
-    height: 100%;
-    bottom: 600px;
-  }
-  .logo_img {
-    width: 70%;
-  }
-  .logo_img img {
-    width: 100%;
+
+  .menu_img {
+    display: inline-block;
   }
   .language {
     display: none;
   }
-  .menu_img {
-    display: inline-block;
-  }
   .name_org_box {
     display: none;
+  }
+  .description {
+    width: 100%;
+  }
+  .description h2 {
+    font-size: 30px;
+  }
+  .description p {
+    font-size: 18px;
   }
   .code_box {
     display: none;
@@ -36,36 +28,11 @@
   nav {
     display: none;
   }
-  .description_box {
-    height: 85%;
-  }
-  .description {
-    width: 100%;
-    align-items: flex-start;
-  }
-  .description p {
+  .menu_img {
     text-align: left;
-    height: 65%;
   }
-  .article_item {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  .article_img {
-    width: 100%;
-  }
-  .article_img img {
-    max-width: 100%;
-  }
-  .article_body {
-    bottom: 0px;
-    width: 100%;
-  }
-  .article_logo {
-    display: inline-block;
-    margin-top: 30px;
+  .main_title {
+    font-size: 35px;
   }
   .second_article {
     display: none;
@@ -73,12 +40,46 @@
   .adaptive_article_item {
     display: flex;
   }
-  .last_logo {
-    display: none;
+  .article_item {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .article_img {
+    max-width: 100%;
+    max-height: 62%;
+    margin-bottom: 54px;
+    justify-content: flex-start;
+    align-self: flex-start;
+  }
+  .adaptive_img {
+    width: 100%;
+    margin-bottom: 54px;
+    justify-content: flex-end;
+  }
+  .author {
+    font-size: 17px;
+  }
+  .adaptive_author {
+    text-align: right;
+  }
+  .adaptive_article_title {
+    text-align: right;
+  }
+  .article_body {
+    width: 100%;
+  }
+  .article_title {
+    font-size: 23px;
+  }
+  .article_content {
+    font-size: 18px;
+  }
+  .article_item img {
+    display: inline-block;
   }
   .read_btn {
-    margin-top: 20px;
-    margin-bottom: 50px;
+    font-size: 23px;
   }
   footer {
     display: none;
@@ -90,6 +91,24 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+  .news_box h2 {
+    font-size: 23px;
+  }
+  #news_email {
+    font-size: 23px;
+  }
+  .news_btn {
+    font-size: 23px;
+  }
+  .contacts_text h3 {
+    font-size: 19px;
+  }
+  .contacts_text h5 {
+    font-size: 19px;
+  }
+  .contact_text p {
+    font-size: 18px;
   }
   .footer_first_block {
     width: 90%;
@@ -108,7 +127,7 @@
   }
   .footer_title p {
     font-family: "GT Eesti Pro Display";
-    font-size: 15.6689px;
+    font-size: 20px;
     line-height: 156.3%;
     letter-spacing: 0.02em;
     color: #ffffff;
@@ -119,7 +138,7 @@
   }
   .footer_about p {
     font-family: GT Eesti Pro Display;
-    font-size: 16px;
+    font-size: 21px;
     line-height: 149%;
     text-align: right;
     letter-spacing: 0.005em;
@@ -162,7 +181,7 @@
   }
   .contacts_layout {
     width: 55%;
-    height: 87%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -192,5 +211,9 @@
     line-height: 16px;
     letter-spacing: 0.02em;
     color: #cccccc;
+  }
+  .news_btn {
+    width: 33%;
+    align-self: center;
   }
 }
