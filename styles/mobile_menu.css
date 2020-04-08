@@ -83,16 +83,6 @@
   cursor: pointer;
   transition: color 0.3s ease-in-out;
 }
-.add_list {
-  width: 170px;
-  height: 175px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  flex-direction: column;
-  padding: 0px;
-  list-style: none;
-}
 .additional_item {
   font-family: "GT Eesti Pro Display";
   font-size: 19px;
