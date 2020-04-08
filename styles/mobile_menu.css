@@ -2,7 +2,7 @@
   width: 375px;
   height: 812px;
   background-color: #000000;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -94,7 +94,7 @@
   list-style: none;
 }
 .additional_item {
-  font-family: GT Eesti Pro Display;
+  font-family: "GT Eesti Pro Display";
   font-size: 19px;
   letter-spacing: 0.01em;
   color: #ffffff;
