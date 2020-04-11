@@ -94,11 +94,12 @@ header {
 }
 .language p {
   font-family: "GT Eesti Pro Text";
-  color: #ffffff;
+  color: #828282;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
 }
 .language p:hover {
   color: #f45b47;
@@ -145,14 +146,15 @@ header {
   font-size: 30px;
   line-height: 35px;
   margin: 0px;
+  letter-spacing: 0.02em;
 }
 .description p {
   width: 100%;
-  height: 144px;
+  height: 166px;
   font-family: "GT Eesti Pro Display";
   font-weight: 300;
   font-size: 17px;
-  line-height: 21px;
+  line-height: 24px;
   text-align: center;
   letter-spacing: 0.01em;
   color: #ffffff;
@@ -169,10 +171,11 @@ header {
 .code {
   font-family: "Helvetica Neue";
   font-weight: 300;
-  font-size: 11px;
-  line-height: 13px;
-  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  line-height: 14px;
+  color: #828282;
   margin: 0px;
+  letter-spacing: 0.01em;
 }
 nav {
   width: 95%;
@@ -196,10 +199,10 @@ nav {
 .menu_item {
   font-family: "GT Eesti Pro Display";
   font-weight: 500;
-  font-size: 16.6347px;
-  line-height: 19px;
+  font-size: 17px;
+  line-height: 25px;
   text-align: center;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   color: #ffffff;
 }
 
@@ -221,9 +224,9 @@ main {
   font-weight: 500;
   font-size: 30px;
   line-height: 35px;
-  letter-spacing: 0.02em;
-  margin-top: 57px;
-  margin-bottom: 57px;
+  letter-spacing: 0.01em;
+  margin-top: 62px;
+  margin-bottom: 95px;
 }
 .article_list {
   width: 95%;
@@ -265,16 +268,16 @@ main {
   justify-content: flex-start;
 }
 .article_body {
-  width: 52%;
+  width: 48%;
   position: relative;
   bottom: 48px;
 }
 .author {
   font-family: "GT Eesti Pro Text";
   font-size: 13px;
-  line-height: 15px;
+  line-height: 19px;
   color: #1818fa;
-  margin-bottom: 11px;
+  margin-bottom: 10px;
 }
 .article_title {
   font-family: "GT Eesti Pro Text";
@@ -327,7 +330,7 @@ footer {
 }
 .info_box {
   width: 95%;
-  height: 90%;
+  height: 78%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -341,7 +344,7 @@ footer {
 }
 .contacts_layout {
   width: 100%;
-  height: 60%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -349,17 +352,17 @@ footer {
 .contacts_layout img {
   width: 150px;
   height: 50px;
-  margin-bottom: 34px;
+  margin-bottom: 47px;
 }
 .contacts_layout h3 {
   font-family: "GT Eesti Pro Display";
   font-weight: 500;
   font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 0.005em;
+  line-height: 23px;
+  letter-spacing: 0.01em;
   color: #ffffff;
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 .contacts_layout h5 {
   font-family: "GT Eesti Pro Display";
@@ -380,7 +383,7 @@ footer {
   margin: 0px;
 }
 .news {
-  width: 18%;
+  width: 19%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -396,10 +399,11 @@ footer {
 .news h2 {
   font-family: "GT Eesti Pro Display";
   font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 17px;
+  line-height: 25px;
   color: #ffffff;
   margin-top: 0px;
+  letter-spacing: 0.01em;
 }
 .news form {
   width: 100%;
@@ -455,16 +459,16 @@ footer {
   box-sizing: border-box;
   background-color: inherit;
   font-family: "GT Eesti Pro Text";
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.05em;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
   color: #ffffff;
 }
 .news_btn:hover {
   cursor: pointer;
 }
 .about {
-  width: 15%;
+  width: 14%;
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -482,9 +486,10 @@ footer {
   width: 80%;
   margin: 0px;
   font-family: "GT Eesti Pro Display";
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 17px;
+  line-height: 25px;
   color: #ffffff;
+  letter-spacing: 0.01em;
 }
 .abot_text hr {
   width: 100%;
@@ -515,13 +520,20 @@ footer {
   font-family: "GT Eesti Pro Display";
   font-weight: 500;
   font-size: 30px;
-  line-height: 35px;
-  letter-spacing: 0.02em;
+  line-height: 41px;
+  letter-spacing: 0.01em;
   color: #ffffff;
-  margin-bottom: 25px;
+  margin-bottom: 32px;
+}
+.contact_text {
+  width: 100%;
+  height: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .contact_img {
-  width: 60px;
+  width: 55px;
   display: flex;
   justify-content: space-between;
 }
@@ -529,10 +541,14 @@ footer {
 .contact_text p {
   font-family: GT Eesti Pro Display;
   font-weight: 500;
-  font-size: 13px;
-  line-height: 15px;
-  letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
   color: #cccccc;
+  margin: 0px;
+}
+.contact_underline {
+  text-decoration: underline;
 }
 .footer_adaptive {
   display: none;
